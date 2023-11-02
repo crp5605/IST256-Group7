@@ -31,6 +31,7 @@ namespace FinalProject.Web.Services
 		/// <exception cref="ArgumentNullException"></exception>
 		public void SendEmailAsync(MailRequest mailRequest)
 		{
+			return;
 			if (mailRequest == null)
 			{
 				throw new ArgumentNullException(nameof(mailRequest));
