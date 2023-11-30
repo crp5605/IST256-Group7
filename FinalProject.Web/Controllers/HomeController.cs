@@ -47,7 +47,9 @@ namespace FinalProject.Web.Controllers
 			
 			return View();
 		}
-
+		public IActionResult Shop(){
+			return View();
+		}
 public IActionResult About()
 {
 	return View();
