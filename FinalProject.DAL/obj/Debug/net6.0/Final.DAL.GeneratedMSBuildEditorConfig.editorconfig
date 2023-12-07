@@ -8,8 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FinalProject.DAL
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\colby\source\repos\IST256-Group7\FinalProject.DAL\
-=======
-build_property.ProjectDir = /Users/brink/IST 256 Projects/IST256-Group7/FinalProject.DAL/
->>>>>>> f40e8790cd9e7a231c08c5ef44224ce5eaa88b30
