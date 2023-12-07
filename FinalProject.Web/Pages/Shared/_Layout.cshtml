@@ -43,10 +43,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-controller="Home" asp-action="Shop" asp-area="">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-controller="Home" asp-action="cart" asp-area="">Cart</a>
-                        </li>
-                    </ul>
+                    </ul>    
+                            <a class="nav-link text-light d-flex flex-row-reverse" asp-controller="Home" asp-action="cart" asp-area="">Checkout</a>
+                
                     <div class="my-2 my-lg-0">
                     </div>
                 </div>
@@ -66,9 +65,8 @@
             </a>
         </div>
         <div class="col-12 col-md-5 text-center">
-            
-            <a href="#" class="pl-1" target="_blank">Contact</a>
-            <a href="https://www.psu.edu/web-privacy-statement/" target="_blank" class="pl-1">Privacy</a>
+            <a href="mailto:cjg5966@psu.edu" class="pl-1" target="_blank">Contact</a>
+            <a asp-controller="Home" asp-action="Privacy" asp-area="">Privacy</a>
             <a href="http://www.psu.edu/accessibilitystatement" target="_blank" class="pl-1">Accessibility</a>
         </div>
         <div class="col-md-4 text-md-end pe-2 mt-1 mt-md-0 x-small">
