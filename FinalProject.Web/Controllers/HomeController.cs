@@ -50,10 +50,14 @@ namespace FinalProject.Web.Controllers
 		public IActionResult Shop(){
 			return View();
 		}
-public IActionResult About()
-{
-	return View();
-}
+		public IActionResult About()
+		{
+			return View();
+		}
+		public IActionResult cart()
+		{
+			return View();
+		}
 		/// <summary>
 		/// Privacy page end point
 		/// </summary>
