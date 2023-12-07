@@ -1,198 +1,162 @@
-
 @{
-	ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="row" alt="Baseball Caps">
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Red Baseball Cap</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Blue Baseball Cap</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Green Baseball Cap</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Yellow Baseball Cap</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Orange Baseball Cap</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Violet Baseball Cap</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
+<style>
+    .product-container {
+        margin-bottom: 20px;
+    }
+
+    .product-item {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .product-item img {
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .product-name {
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .product-price {
+        color: green;
+        margin-top: 5px;
+    }
+</style>
+
+<div class="product-container">
+    <div class="row" alt="Baseball Caps">
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Baseball/RedHat.jpg" alt="Crimson Red Baseball Cap" class="rounded-3">
+            <div class="product-name">Crimson Red Baseball Cap</div>
+            <div class="product-price">$4.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Baseball/BlueHat.jpg" alt="Baby Blue Baseball Cap" class="rounded-3">
+            <div class="product-name">Baby Blue Baseball Cap</div>
+            <div class="product-price">$4.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Baseball/GreenHat.jpg" alt="Moss Green Baseball Cap" class="rounded-3">
+            <div class="product-name">Moss Green Baseball Cap"</div>
+            <div class="product-price">$4.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+    </div>
 </div>
 
-<div class="row" alt="Beanies">
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Red Beanie</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Blue Beanie</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Green Beanie</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Yellow Beanie</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Orange Beanie</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">White Beanie</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
+<div class="product-container">
+    <div class="row" alt="Beanies">
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Beanie/RedBeanie.jpg" alt="Ruby Red Beanie" class="rounded-3">
+            <div class="product-name">Ruby Red Beanie</div>
+            <div class="product-price">$9.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+         <div class="col-4 product-item">
+            <img src="/images/Shop/Beanie/BlueBeanie.jpg" alt="Indigo Blue Beanie" class="rounded-3">
+            <div class="product-name">Indigo Blue Beanie</div>
+            <div class="product-price">$9.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		 <div class="col-4 product-item">
+            <img src="/images/Shop/Beanie/GreenBeanie.jpg" alt="Olive Green Beanie" class="rounded-3">
+            <div class="product-name">Olive Green Beanie</div>
+            <div class="product-price">$9.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+    </div>
 </div>
-<div class="row" alt="Trucker Hats">
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Red Trucker Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Blue Trucker Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Green Trucker Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Yellow Trucker Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Orange Trucker Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">White Trucker Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-</div>
-<div class="row" alt="Snapback Hats">
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Red Snapback Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Blue Snapback Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Green Snapback Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Yellow Snapback Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Orange Snapback Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">White Snapback Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-</div>
-<div class="row" alt="Fedoras">
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Red Fedora</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Blue Fedora</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Green Fedora</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Yellow Fedora</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Orange Fedora</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">White Fedora</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-</div>
-<div class="row" alt="Bucket Hats">
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Red Bucket Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Blue Bucket Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Green Bucket Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Yellow Bucket Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">Orange Bucket Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-		<div class="col-4 border border-primary-subtle">
-			<img src="/images/Shop/Template.png" width="200px" class="rounded-3">
-			<div class="justify-content-center">White Bucket Hat</div>
-			<div> <button class="btn btn-light" type="submit">Add to Cart</button></div>
-		</div>
-</div>
+
+<div class="product-container">
+    <div class="row" alt="Trucker Hats">
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Trucker/RedTrucker.jpg" alt="Cherry Red Trucker Hat" class="rounded-3">
+            <div class="product-name">Cherry Red Trucker Hat</div>
+            <div class="product-price">$5.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		 <div class="col-4 product-item">
+            <img src="/images/Shop/Trucker/BlueTrucker.jpg" alt="Ocean Blue Trucker Hat" class="rounded-3">
+            <div class="product-name">Ocean Blue Trucker Hat</div>
+            <div class="product-price">$5.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		 <div class="col-4 product-item">
+            <img src="/images/Shop/Trucker/GreenTrucker.jpg" alt="Pine Green Trucker Hat" class="rounded-3">
+            <div class="product-name">Pine Green Trucker Hat</div>
+            <div class="product-price">$5.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+
+<div class="product-container">
+    <div class="row" alt="Snapback Hats">
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Snapback/RedSnapback.jpg" alt="Candy Red Snapback Hat" class="rounded-3">
+            <div class="product-name">Candy Red Snapback Hat</div>
+            <div class="product-price">$14.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		<div class="col-4 product-item">
+            <img src="/images/Shop/Snapback/BlueSnapback.jpg" alt="Berry Blue Snapback Hat" class="rounded-3">
+            <div class="product-name">Berry Blue Snapback Hat</div>
+            <div class="product-price">$14.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		<div class="col-4 product-item">
+            <img src="/images/Shop/Snapback/GreenSnapback.jpg" alt="Pear Green Snapback Hat" class="rounded-3">
+            <div class="product-name">Pear Green Snapback Hat</div>
+            <div class="product-price">$14.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		
+<div class="product-container">
+    <div class="row" alt="Fedora Hats">
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Fedora/RedFedora.jpg" alt="Rose Red Fedora" class="rounded-3">
+            <div class="product-name">Rose Red Fedora</div>
+            <div class="product-price">$19.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		<div class="col-4 product-item">
+            <img src="/images/Shop/Fedora/BlueFedora.jpg" alt="Royal Blue Fedora" class="rounded-3">
+            <div class="product-name">Royal Blue Fedora</div>
+            <div class="product-price">$19.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		<div class="col-4 product-item">
+            <img src="/images/Shop/Fedora/GreenFedora.jpg" alt="Emerald Green Fedora" class="rounded-3">
+            <div class="product-name">Emerald Green Fedora</div>
+            <div class="product-price">$19.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+
+<div class="product-container">
+    <div class="row" alt="Bucket Hats">
+        <div class="col-4 product-item">
+            <img src="/images/Shop/Bucket/RedBucket.jpg" alt="Scarlet Red Bucket Hat" class="rounded-3">
+            <div class="product-name">Scarlet Red Bucket Hat</div>
+            <div class="product-price">$12.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		<div class="col-4 product-item">
+            <img src="/images/Shop/Bucket/BlueBucket.jpg" alt="Sky Blue Bucket Hat" class="rounded-3">
+            <div class="product-name">Sky Blue Bucket Hat</div>
+            <div class="product-price">$12.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
+		<div class="col-4 product-item">
+            <img src="/images/Shop/Bucket/GreenBucket.jpg" alt="Mint Green Bucket Hat" class="rounded-3">
+            <div class="product-name">Mint Green Bucket Hat</div>
+            <div class="product-price">$12.99</div>
+            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+        </div>
