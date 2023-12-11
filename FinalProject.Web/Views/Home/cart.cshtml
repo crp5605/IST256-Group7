@@ -13,8 +13,17 @@
 
         <div class="mb-4">
             <h4>Order Summary</h4>
-            <p>Total: $<span id="cart-total">0.00</span></p>
+            <p>Total Amount: $<span id="totalAmount"></span></p>
         </div>
+
+    <script>
+        // Retrieve the cart total from session storage
+        var cartTotal = parseFloat(sessionStorage.getItem('cartTotal')) || 0;
+
+        // Display the cart total on the checkout page
+        document.getElementById('totalAmount').textContent = cartTotal.toFixed(2);
+    </script>
+
 
         <form>
             <div class="mb-3">
@@ -49,3 +58,10 @@
     </div>
     
 </body>
+
+<!-- 
+    <div class="mb-4">
+            <h4>Order Summary</h4>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+-->

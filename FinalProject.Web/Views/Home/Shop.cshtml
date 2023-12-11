@@ -30,7 +30,7 @@
             <img src="/images/Shop/Baseball/RedHat.jpg" alt="Crimson Red Baseball Cap" class="rounded-3">
             <div class="product-name">Crimson Red Baseball Cap</div>
             <div class="product-price">$4.99</div>
-            <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
+            <div><button class="btn btn-light" onclick="addToCart(4.99)">Add to Cart</button></div>
         </div>
         <div class="col-4 product-item">
             <img src="/images/Shop/Baseball/BlueHat.jpg" alt="Baby Blue Baseball Cap" class="rounded-3">
@@ -153,3 +153,19 @@
             <div class="product-price">$12.99</div>
             <div><button class="btn btn-light" type="submit">Add to Cart</button></div>
         </div>
+
+<script>
+    function addToCart(productPrice) {
+        // Get the current cart total from session storage
+        var cartTotal = parseFloat(sessionStorage.getItem('cartTotal')) || 0;
+
+        // Add the selected product price to the cart total
+        cartTotal += productPrice;
+
+        // Store the updated cart total in session storage
+        sessionStorage.setItem('cartTotal', cartTotal.toFixed(2));
+
+        // Refresh the checkout page to reflect the updated cart total
+        window.location.href = 'cart.cshtml';
+    }
+</script>
